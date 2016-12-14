@@ -9,8 +9,7 @@ static param_export_t params[]={
 
 static int m_gcm_notify(struct sip_msg *msg, char * token)
 {
-  LM_DBG("Notifying GCM. Token:%s Secret:%s\n", token, secret);
-  sleep((unsigned int)(unsigned long)time);
+  LM_INFO("Notifying GCM. Token:%s Secret:%s\n", token, secret);
   return 1;
 }
 
